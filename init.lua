@@ -1,4 +1,4 @@
--- require 'lnh'
+require 'lnh'
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
