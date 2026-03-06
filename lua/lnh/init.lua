@@ -1,1 +1,1 @@
-require('lnh.remap')
+require 'lnh.remap'

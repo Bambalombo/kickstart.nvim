@@ -3,6 +3,9 @@ require 'lnh'
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- Fix `diffget` not replacing enture conflict, source; https://github.com/tpope/vim-fugitive/issues/2444
+vim.opt.diffopt:remove 'linematch:40'
+
 -- [[ Setting options ]]
 vim.o.number = true
 vim.o.relativenumber = true
