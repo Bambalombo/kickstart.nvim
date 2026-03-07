@@ -3,7 +3,6 @@ return {
   config = function()
     --
     vim.keymap.set('n', '<leader>gs', vim.cmd.Git, { desc = 'git status' })
-
     local group = vim.api.nvim_create_augroup('fugitive_maps', { clear = true })
     local autocmd = vim.api.nvim_create_autocmd
 
