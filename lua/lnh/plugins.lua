@@ -1,4 +1,5 @@
 -- [[ Install `lazy.nvim` plugin manager ]]
+--
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -45,6 +46,7 @@ require('lazy').setup({
   require 'lnh.plugins.undotree',
   require 'lnh.plugins.fugitive',
   require 'lnh.plugins.oil',
+  require 'lnh.plugins.hardtime',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
