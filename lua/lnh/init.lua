@@ -1,3 +1,4 @@
+require 'lnh.themes'
 require 'lnh.remap'
 require 'lnh.settings'
 require 'lnh.autocommands'
