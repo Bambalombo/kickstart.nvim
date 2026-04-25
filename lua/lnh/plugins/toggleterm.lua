@@ -9,6 +9,6 @@ return {
       shade_filetypes = {},
       direction = 'float',
     }
-    -- vim.keymap.set('n', ')
+    vim.keymap.set('n', '<leader>ot', ':ToggleTerm<CR>', { desc = '[O]pen [T]erminal' })
   end,
 }

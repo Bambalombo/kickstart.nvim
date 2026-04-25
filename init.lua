@@ -1,3 +1,5 @@
+vim.o.modeline = false
+
 require 'lnh'
 
 vim.o.guifont = 'Fira_Code:h12'
