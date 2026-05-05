@@ -28,7 +28,6 @@ require('lazy').setup({
   -- -- Other kickstart plugins --
   require 'lnh.plugins.conform', -- Autoformat
   require 'lnh.plugins.blink', -- Autocompletion
-  require 'lnh.plugins.tokyonight', -- looks
   require 'lnh.plugins.todo-comments', -- Highlight todo, notes, etc in comments
   require 'lnh.plugins.mini', -- Collection of various small independent plugins/modules
   require 'lnh.plugins.treesitter', -- Highlight, edit, and navigate code
