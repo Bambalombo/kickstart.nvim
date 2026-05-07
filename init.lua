@@ -2,7 +2,7 @@ vim.o.modeline = false
 
 require 'lnh'
 
-vim.o.guifont = 'Fira_Code:h12'
+vim.o.guifont = 'Fira_Code_Light:h10'
 vim.o.guifontwide = 'Fira_Code_Medium:h12'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
