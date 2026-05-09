@@ -42,22 +42,21 @@ return {
     vim.keymap.set('n', '<leader>gb', ':Git branch<CR>', { desc = 'git [B]ranch' })
     -- vim.keymap.set('n', '<leader>gP', vim.cmd.Git, { desc = 'git pull' })
 
-    function _G.cd_oil_dir()
-        local ok, oil = pcall(require, "oil")
-        if not ok then
-            print("oil.nvim not loaded")
-            return
-        end
+    function _G.cd_dir()
+      local ok, oil = pcall(require, 'oil')
+      if not ok then
+        print 'oil.nvim not loaded'
+        return
+      end
 
-        local dir = oil.get_current_dir()
-        if dir then
-            vim.cmd("cd " .. vim.fn.fnameescape(dir))
-            print("Changed directory to " .. dir)
-        else
-            print("Not in an oil buffer")
-        end
+      local dir = oil.get_current_dir()
+      if dir then
+        vim.cmd('cd ' .. vim.fn.fnameescape(dir))
+        print('Changed directory to ' .. dir)
+      else
+        print 'Not in an oil buffer'
+      end
     end
-    vim.keymap.set("n", "<leader>gcd", cd_oil_dir, { desc = "cd to oil dir" })
-end,
+    vim.keymap.set('n', '<leader>cd', cd_dir, { desc = 'cd to oil dir' })
+  end,
 }
-
